@@ -1197,7 +1197,7 @@ function logout(){
   el('setup-screen')  && (el('setup-screen').style.display='flex');
   // Clear login inputs
   ['login-name','login-pin'].forEach(id=>{ if(el(id)) el(id).value=''; });
-   window.location.reload()
+   window.location.reload();
 }
 
 // ── Clear ALL app cache (stale data fix) ──
